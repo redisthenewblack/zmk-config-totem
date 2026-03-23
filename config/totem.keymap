@@ -115,7 +115,7 @@
             >;
         };
 
-        layer_7 {
+        cs {
             bindings = <
            &kp N3     &kp Q  &kp W   &kp E   &kp R        &trans  &trans  &trans  &trans  &trans
            &kp LSHFT  &kp A  &kp S   &kp D   &kp F        &trans  &trans  &trans  &trans  &trans
