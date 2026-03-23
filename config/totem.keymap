@@ -32,28 +32,9 @@
             bindings = <&kp TAB>;
             key-positions = <9 8>;
         };
-
-        combo_caps {
-            bindings = <&kp CAPS>;
-            key-positions = <20 31>;
-        };
-
-        combo_ctrl {
-            bindings = <&kp LCTRL>;
-            key-positions = <12 13>;
-        };
     };
 
     behaviors {
-        ss_hs_modmorph: ss_hs_modmorph {
-            compatible = "zmk,behavior-mod-morph";
-            label = "SS_HS_MODMORPH";
-            bindings = <&kp M>, <&kp RIGHT_BRACKET>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-
         kh_hs_tapdance: kh_hs_tapdance {
             compatible = "zmk,behavior-tap-dance";
             label = "KH_HS_TAPDANCE";
@@ -81,7 +62,7 @@
             bindings = <
                  &kp Q        &kp W        &kp E         &kp R         &kp T      &kp Y      &kp U            &kp I         &kp O        &kp P
                  &hrm LGUI A  &hrm LALT S  &hrm LCTRL D  &hrm LSHFT F  &kp G      &kp H      &hrm RSHFT J     &hrm RCTRL K  &hrm RALT L  &hrm RGUI SEMICOLON
-&kh_hs_tapdance  &kp Z        &kp X        &kp C         &kp V         &kp B      &kp N      &kp M            &kp COMMA     &kp DOT      &kp FSLH             &tog 0
+&kh_hs_tapdance  &kp Z        &kp X        &kp C         &kp V         &kp B      &kp N      &kp M            &kp COMMA     &kp DOT      &kp FSLH             &kp APOS
                                            &kp LEFT_GUI  &lt 1 SPACE   &kp TAB    &kp ENTER  &lt 2 BACKSPACE  &kp DELETE
             >;
         };
